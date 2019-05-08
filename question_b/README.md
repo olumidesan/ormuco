@@ -14,3 +14,6 @@ source directory: `question_b/`
 
 - Install the library using, `python3 ./version_string/dist/version_string-0.0.1-py3-none-any.whl`
 - Run the test using, `python3 tests.py`
+
+#### Source code Location ####
+The actual source code of the library can be found in `./version_string/build/lib/vstring` or `./version_string/vstring`
