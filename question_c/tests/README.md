@@ -15,7 +15,7 @@ The test tests for two things:
 
 Directory: `ormuco/question_c/tests`
 
-- Fire up five bash terminals, all into the virtual environment where `sqlalchemy`, `psycopg2`, and the `lrucache` were installed into. 
+- Fire up five bash terminals, all into the virtual environment where `sqlalchemy`, `psycopg2`, and the `geo_lrucache` were installed. 
 - Run each of the location's script in each of the terminals, starting `manitoba_test.py` last.
 - Watch the library work.
 
