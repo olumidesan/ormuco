@@ -3,7 +3,7 @@
 *Test Design*: To mock different machines located at different regions, I created five scripts to mock each region. Each script being                    made to act like it's a machine at a separate geolocation. The five regions I chose were: Quebec (because Ormuco is in 
                Quebec :), Manitoba, Alberta, NewFoundland and Labrador, and British Columbia. The accurate geolocations of each province was gotten through Google Maps and was used as the coordinates for creating (instantiating) each cache.
 
-In this test, the cache from Manitoba is to be started last using the below procedure. This is because the script in the `manitoba_test.py` file requires that the other caches, `alberta_test.py`, `nfl_test.py`, `bc_test.py`, and `quebec_test.py` have all registered themselves in the environment before Manitoba's cache sets an item in itself. If any of the others is not started before it, it won't see the set operation that Manitoba's cache propagated.
+In this test, the cache from Manitoba is to be started last using the below procedure. This is because the script in the `manitoba_test.py` file requires that the other caches, `alberta_test.py`, `nfl_test.py`, `bc_test.py`, and `quebec_test.py` have all registered themselves in the environment before Manitoba's cache sets an item in itself. If any of the others is not started before the Manitoba's cache, it won't see the set operation that Manitoba's cache propagated.
 
 The test tests for two things:
 1. That when a cache in one geolocation sets an item on itself, the other caches registered in the environment see that operation and also set that item within themselves.
