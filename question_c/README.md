@@ -30,7 +30,7 @@ The use of a PostgreSQL database was also chosen in order to match the second re
 The library uses a very light schema that just contains two tables. One to hold the geolocations (latitude-longitude pair) of all the caches registered in the environment, and the other to allow for communication between caches.
 
 #### Testing ####
-*Test Design*: In order to mimic the presence of machines in several geolocations, I had to test the library in a `mulitprocessing` environment. This is not to say that I used Python's `multiprocessing` library, as I could not get the `unittest` module to behave, but it's to state that I mocked each machine as a different, separate python script, running on a different, separate python terminal/cmd process. This was a made as a compromise. Kindly bear with me.
+*Test Design*: In order to mimic the presence of machines in several geolocations on my sole system, I had to test the library in a `mulitprocessing` environment. This is not to say that I used Python's `multiprocessing` library, as I could not get the `unittest` module to behave, but it's to state that I mocked each machine as a different, separate python script, running on a different, separate python terminal/cmd process. This was a made as a compromise. Kindly bear with me.
 
 Directory: `ormuco/question_c/`
 
