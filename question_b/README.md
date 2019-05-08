@@ -6,7 +6,7 @@ Question: The goal of this question is to write a software library that accept
           than “1.1”. Please provide all test cases you could think of.
 
 
-source directory: `question_b/`
+directory: `ormuco/question_b/`
 
 #### Testing ####
 - The question asked to create a library, so I created one that can be installed with `pip install <library_name>`
