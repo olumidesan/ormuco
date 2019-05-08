@@ -32,7 +32,7 @@ The library uses a very light schema that just contains two tables. One to hold 
 #### Testing ####
 *Test Design*: In order to mimic the presence of machines in several geolocations, I had to test the library in a `mulitprocessing` environment. This is not to say that I used Python's `multiprocessing` library, as I could not get the `unittest` module to behave, but it's to state that I mocked each machine as a different, separate python script, running on a different, separate python terminal/cmd process. This was a made as a compromise. Kindly bear with me.
 
-source directory: `question_c/`
+Directory: `ormuco/question_c/`
 
 - Install the libraries in the `requirements.txt` file (preferably in a virtual environment). (Mainly `sqlalchemy` and PostgreSQL's driver `psycopg2`). To do that, run `pip3 install -r requirements.txt`. 
 - The question also requested that a library be created, like Question B, so I created a library, and as usual, did not upload to PyPi, the local installation method still proving effective enough. To install the library, run from the source directory, `pip3 install ./geo_lrucache/dist/GeoLRUCache-0.0.1-py3-none-any.whl`
