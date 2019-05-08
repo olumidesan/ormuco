@@ -35,7 +35,7 @@ The library uses a very light schema that just contains two tables. One to hold 
 Directory: `ormuco/question_c/`
 
 - Install the libraries in the `requirements.txt` file (preferably in a virtual environment). (Mainly `sqlalchemy` and PostgreSQL's driver `psycopg2`). To do that, run `pip3 install -r requirements.txt`. 
-- The question also requested that a library be created, like Question B, so I created a library, and as usual, did not upload to PyPi, the local installation method still proving effective enough. To install the library, run from the source directory, `pip3 install ./geo_lrucache/dist/GeoLRUCache-0.0.1-py3-none-any.whl`
+- The question also requested that a library be created, like Question B, so I created a library, and as usual, did not upload to PyPi, the local installation method still proving effective enough. To install the library, run from this directory, `pip3 install ./geo_lrucache/dist/GeoLRUCache-0.0.1-py3-none-any.whl`
 - After installation, `cd` into the tests directory: `cd tests`
 - Directions for testing are in the README.md file in the `tests` directory
 
