@@ -39,5 +39,6 @@ source directory: `question_c/`
 - After installation, `cd` into the tests directory: `cd tests`
 - Directions for testing are in the README.md file in the `tests` directory
 
-
+#### Source Code Location ####
+The actual source code of the library can be found in `./geo_lrucache/build/lib/lrucache` or `./geo_lrucache/lrucache`
 
