@@ -17,7 +17,7 @@ Directory: `ormuco/question_c/tests`
 
 - Fire up five bash terminals, all into the virtual environment where `sqlalchemy`, `psycopg2`, and the `geo_lrucache` were installed. 
 - Run each of the location's script in each of the terminals, starting `manitoba_test.py` last.
-- Watch the library work.
+- Watch the scripts run until they exit by themselves.
 
 #### Notes and Warnings ####
 1. As the database is the main interaction layer between all the caches, it is important that it's an enterprise grade database being used for production. This test has only been carried out using PostgreSQL and SQLite. However, note that if SQLite is being used, it must be used cautiously, as it doesn't support concurrent writes. Using this manual method of starting each machine, though, SQLite also works without hitch because it becomes impossible to start each script at the same literal time.
