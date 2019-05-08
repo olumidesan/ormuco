@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: GeoLRUCache
+Version: 0.0.1
+Summary: A coordinates-based distributed LRU cache with optional time epiration
+Home-page: https://github.com/oluminous/geo_lrucache
+Author: Akinremi Olumide Josiah
+Author-email: josiahakinremi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

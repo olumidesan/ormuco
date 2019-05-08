@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: version-string
+Version: 0.0.1
+Summary: A library that allows creation and comparison operations between version strings
+Home-page: https://github.com/oluminous/version_string
+Author: Akinremi Olumide Josiah
+Author-email: josiahakinremi@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
