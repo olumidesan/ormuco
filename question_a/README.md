@@ -5,7 +5,7 @@ Question: Your goal for this question is to write a program that accepts two l
           x-axis and returns whether they overlap. As an example, (1,5) and (2,6) overlaps but not (1,5)
           and (6,8).
 
-source directory: `question_a/`
+Directory: `ormuco/question_a/`
 
 #### Testing ####
 On the terminal/cmd, run `python3 tests.py`
