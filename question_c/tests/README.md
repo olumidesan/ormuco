@@ -19,7 +19,7 @@ Directory: `ormuco/question_c/tests`
 - Run each of the location's script in each of the terminals, starting `manitoba_test.py` last.
 - Watch the library work.
 
-##### Notes and Warnings #####
+#### Notes and Warnings ####
 1. As the database is the main interaction layer between all the caches, it is important that it's an enterprise grade database being used for production. This test has only been carried out using PostgreSQL and SQLite. However, note that if SQLite is being used, it must be used cautiously, as it doesn't support concurrent writes. Using this manual method of starting each machine, though, SQLite also works because it becomes impossible to start each script at the same time.
 2. The GeoLRUCache is meant to be a singleton class, meaning that only one instance of the cache is meant to be created per process. Even if this singleton behaviour was not implemented, it's worth mentioning, as instantiating more than one GeoLRUCache instance will indeterminately cause write conflicts when accessing the database, since no locking mechanism was used for the listener and main thread of the instance, who by themselves never have conflict but may do when another instance is created within the same process.
 3. To test which cache actually gets each newly propagated item first, the `propagate_write` decorator in `./geo_lrucache/lrucache/utils.py` file can be modified on line `172` where a sleep call has been commented out. Uncommenting that line and running the test using the local code in the `./geo_lrucache/lrucache` folder will give visual notification of which location is closest to Manitoba, and consequently who gets the item first (locality of reference)
